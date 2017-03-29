@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <!--I am the head of index page-->
+    <!--Add script file or css files hear-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-cookies.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <script src="http://unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/js/angular-material-event-calendar.min.js"></script>
+    <script src="/js/jq.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/Services.js"></script>
+    <script src="/js/confirm-password.js"></script>
+    <script src="/js/Controllers.js"></script>
+    
+    <!--Socket.io-->
+    <script src="/js/angular-socket.js"></script>
+    <script src="/js/chat.js"></script>
+
+    <script src="/js/event.js"></script>
+    <script src="/js/file.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!--ng-file-upload-->
+    <script src="/js/ng-file-upload-shim.min.js"></script>
+    <script src="/js/ng-file-upload.min.js"></script>
+    <script src="/js/ng-img-crop.js"></script>
+    <script src="/js/icon-upload.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/js/angular-material-event-calendar.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/container.css">
+    <link rel="stylesheet" type="text/css" href="/css/setting.css">
+    <title>{{title}}</title>
+
+
+
+</head>
+<body>
+    <div ui-view="navigation" >
+    </div>
+    <div ui-view="container">
+    </div>
+</body>
+</html>
