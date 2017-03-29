@@ -11,10 +11,10 @@
 - Update personal info(change pwd, etc)
 - Sign in/out
 - Create/delete teams
-- Invite/delete memebers to/from team (Email alert maybe?)
-- Publish/delete new posts(text/pictures) in team
+- Invite/delete members to/from team (Email alert maybe?)
+- Publish/delete new posts(text/pictures) in the team
 - Comment on posts
-- Create new event/meeting using calendar
+- Create new event/meeting using the calendar
 - Instant team chat
 - File sharing
 
@@ -33,7 +33,7 @@ and open a new terminal to run next step**
 
 1. Make sure that you've installed [Vagrant](https://www.vagrantup.com/) & [VirtualBox](https://www.virtualbox.org/)
 2. Clone this repository
-3. In terminal, run `$vagrant up`
+3. In the terminal, run `$vagrant up`
 4. Wait for VM to finish booting up
 5. Browse http://localhost:3000/ to see the site 
 
@@ -44,7 +44,7 @@ and open a new terminal to run next step**
 3. When you finish implementing the feature, test it and create a `merge request`. Please add a description for it.
 4. Let your team know you have a `merge request` and it's ready for code review
 
-## How to access DB (through GUI)
+## How to access DB (through the GUI)
 
 1. Make sure you've downloaded and installed [Robomongo](https://robomongo.org/)
 2. Open Robomongo
