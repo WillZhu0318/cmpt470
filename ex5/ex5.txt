@@ -1,14 +1,13 @@
-1. XSS possibility on contacts edit page: user can input JavaScript code as Notes, such as xxxx <script>for (i=0;i<5;i++){var x="this is " + i ;alert(x);}</script> , which cause 5 times alert box display. 
+1. XSS possibility of contacts, edit page: user can input JavaScript code as Notes, such as xxxx <script>for (i=0;i<5;i++){var x="this is " + i ;alert(x);}</script> , which cause 5 times alert box display. 
 This security hole will allow attacker make visitors' page to do anything JavaScript code can do.
 
 2. Insufficient Authorization: security hole on user see their friends shared contacts page, which allow one user to see other user's contacts without permission, just direct through URL like http://cmpt470.csil.sfu.ca/security/friends/user4/ (assume user 4 does not share contacts to current user).
 This security hole will cause user's private information leakage.
 
 3. Inappropriately-trusted input: if user only type space in the first name and the last name input boxes, when add a new person's contact, the AttributeError page will be given.
-This inappropriate input dose not be limited, which cause attribute error.
+This inappropriate input dose not be limited, which cause attributes error.
 
-4. Iappropriately-trusted input: when user edits contacts, if user change the first name and last name to white space, the name of this contact will be empty. 
-When user finish editing and back to home page, he/she cannot access this contact anymore because there is no link for it.
+4. I appropriately-trusted input: when user edits contacts, if user change the first name and last name of white space, the name of this contest will be empty. 
+When users finish editing and back to the home page, he/she cannot access this contact anymore because there is no link for it.
 
-5. general deficiency: if user4 has already shared contacts whit user1, user2, user3, and click link "Share my contacts with a friend" again, user4 cannot back to home page. Because there are no more person can be submit and no link for home page.
-
+5. General deficiency: if user4 has already shared contacts whit user1, user2, user3, and click link "Share my contacts with a friend" again, user4 cannot back to home page. Because there are no more person can be submitted and no link to home page.
